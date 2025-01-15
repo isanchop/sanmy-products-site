@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shot by Sanmy</title>
+  <!-- Google Fonts (optional) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome (optional for icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-acXKpBUp6ZhrYgS+8CB9Da9uUJ7p/AwNcnkuZXN0dPNaJKcvWqwGof3gm72HvmNmXlLA4A5UmzQkXyXfa1IGTA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    /* Global reset & font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      scroll-behavior: smooth;
+    }
+
+    /* Simple fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    /* Header / Hero Section */
+    header {
+      background: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header .product-logo {
+      max-width: 200px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #d81e1e; /* red tone */
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0.5rem auto;
+    }
+
+    /* Section styling */
+    section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    section h2 {
+      color: #d81e1e;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+    section .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+    section .content img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    section .text-block {
+      max-width: 600px;
+    }
+    section .text-block p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Icon list */
+    .icon-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .icon-list .feature {
+      flex: 1 1 200px;
+      background: #d81e1e;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .icon-list .feature i {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a {
+      color: #d81e1e;
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .icon-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero / Header -->
+  <header class="fade-in">
+    <!-- Replace with your product logo or any main image -->
+    <img
+      src="images/shot-by-sanmy-logo.png"
+      alt="Shot by Sanmy Logo"
+      class="product-logo"
+    />
+    <h1>SHOT BY SANMY</h1>
+    <p>The Natural Energy Booster for Your Active Lifestyle</p>
+  </header>
+
+  <!-- Product Overview Section -->
+  <section class="fade-in" style="animation-delay: 0.5s;">
+    <h2>Product Overview</h2>
+    <div class="content">
+      <!-- Replace with your bottle image (the single bottle) -->
+      <img
+        src="images/shot-by-sanmy-bottle.png"
+        alt="Shot by Sanmy Bottle"
+      />
+      <div class="text-block">
+        <p>
+          Sanmy’s Energy Shot is a dietary supplement designed to provide a
+          sustained energy boost for busy adults balancing work, study, fitness,
+          and daily life. Formulated with natural ingredients such as guaraná
+          extract, Siberian ginseng, vitamins, and minerals, each 60 ml shot
+          offers an invigorating blend to help you power through the day.
+        </p>
+        <p>
+          Key benefits include antioxidants, vitamins, and a unique raspberry
+          aroma in a convenient format. Experience smooth, long-lasting energy
+          that keeps you focused and motivated for hours.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section class="fade-in" style="background:#f9f9f9; animation-delay: 1s;">
+    <h2>Key Features</h2>
+    <div class="icon-list">
+      <div class="feature">
+        <i class="fas fa-leaf"></i>
+        <div>Natural Guaraná & Ginseng</div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-bolt"></i>
+        <div>90 mg of Caffeine per Shot</div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-tint"></i>
+        <div>Raspberry Aroma & Flavor</div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <div>Rich in Vitamins & Minerals</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage Scenarios Section -->
+  <section class="fade-in" style="animation-delay: 1.5s;">
+    <h2>Usage Scenarios</h2>
+    <div class="content">
+      <!-- Replace with your second product image or a lifestyle shot -->
+      <img
+        src="images/shot-by-sanmy-soccer.png"
+        alt="Shot by Sanmy on the field"
+      />
+      <div class="text-block">
+        <p>
+          <strong>Start Your Day:</strong> Ideal for a morning boost, especially
+          if you're not a morning person.
+        </p>
+        <p>
+          <strong>Post-Lunch Slump:</strong> Stay alert and productive through
+          the afternoon.
+        </p>
+        <p>
+          <strong>Workout & Sports:</strong> Enhance motivation, endurance,
+          and performance.
+        </p>
+        <p>
+          <strong>Travel & Commute:</strong> Beat drowsiness during long drives
+          or flights.
+        </p>
+        <p>
+          <strong>Weekends & Household Tasks:</strong> Power through chores or
+          leisure activities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Distribution Section -->
+  <section class="fade-in" style="background:#f9f9f9; animation-delay: 2s;">
+    <h2>Contact & Distribution</h2>
+    <div class="content">
+      <div class="text-block">
+        <p>
+          <strong>Logistics:</strong><br />
+          • Unit Size: 3.5 cm x 3.5 cm x 9.8 cm (80 g)<br />
+          • Box: 12 units (1.018 kg total)<br />
+          • Pallet: 700 boxes, total weight 734 kg<br />
+        </p>
+        <p>
+          <strong>Contact Details:</strong><br />
+          Email: <a href="mailto:sanmy@sanmy.es">sanmy@sanmy.es</a><br />
+          Website: <a href="http://www.sanmy.es" target="_blank">www.sanmy.es</a><br />
+          Phone: +34 937 87 00 83<br />
+          Address: Ctra. de Castellar Nº 586, 08227 Terrassa (Barcelona)
+        </p>
+      </div>
+      <!-- Replace with any third product or brand image you want -->
+      <img
+        src="images/sanmy-logo.png"
+        alt="Shot by Sanmy trio on a green field"
+      />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2023 <strong>Shot by Sanmy</strong> | All Rights Reserved
+    </p>
+  </footer>
+</body>
+</html>
